@@ -1,5 +1,4 @@
 $color-item-border: $red;
-$color-media-head:  $blue;
 
 .media {
   margin: 0;
@@ -7,17 +6,9 @@ $color-media-head:  $blue;
   list-style: none;
 
   .item {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
-    border-top: 1px dotted $color-item-border;
-    &:hover {
-      background: $yellow;
-    }
-    &:last-of-type {
-      border-bottom: 1px dotted $color-item-border;
-    }
-    @include clearfix;
+    margin-bottom: 20px;
+    border-top: 1px dotted $color-item-border; 
+    padding-top: 20px; 
   }
 
   .head {
@@ -25,11 +16,8 @@ $color-media-head:  $blue;
     padding: 0;
     color: $color-media-head;
     font-size: 2rem;
-    #typography & {
-      color: $red;
-    }
   }
-
+  
   p {
     margin: 0;
     font-size: 1.5rem;
@@ -37,11 +25,11 @@ $color-media-head:  $blue;
 
   img {
     float: left;
-    margin-right: 10px;
+    margin-right: 10px;  
   }
 
   a {
     text-decoration: none;
-    color: $color-main;
+    color: $color-main; 
   }
 }
