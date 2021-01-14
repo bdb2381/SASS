@@ -1,13 +1,3 @@
-@import "variables";
-@import "normalize";
-@import "mixins";
-@import "base";
-@import "interface";
-
-@import "modules/backgrounds";
-@import "modules/media";
-@import "modules/tables";
-@import "modules/navigation";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
@@ -15,7 +5,9 @@
 $offwhite: #EEE8D6;
 $darkblue: #022933;
 $red: red;
+$blue: blue;
 
+$color-media-head: blue;
 $color-headlines: $red;
 $color-main: $darkblue;
 $color-backgrounds: $offwhite;
@@ -46,4 +38,40 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-title;
   color: $color-headlines;
+}
+
+$color-item-border: $red;
+
+.media {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .item {
+    margin-bottom: 20px;
+    border-top: 1px dotted $color-item-border; 
+    padding-top: 20px; 
+  }
+
+  .head {
+    margin: 0;
+    padding: 0;
+    color: $color-media-head;
+    font-size: 2rem;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  img {
+    float: left;
+    margin-right: 10px;  
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-main; 
+  }
 }
