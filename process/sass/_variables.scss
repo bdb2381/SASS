@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather|Josefin+Slab|Oswald|Bree+Serif);
 
 // colors
-$offwhite:    #EEE8D6;
+$offwhite:    rgb(255, 255, 255);
 $darkblue:    #022933;
 $yellow:      #FFBA00;
 $blue:        #0076A3;
@@ -19,6 +19,7 @@ $color-headlines: $red;
 //font usage
 $font-main: Merriweather, Helvetica, sans-serif;
 $font-highlight: 'Bree Serif', Helvetica, sans-serif;
+$font-title: Helvetica;
 
 //breakpoints
 $small:		450px;
