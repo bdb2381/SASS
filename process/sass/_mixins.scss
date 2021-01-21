@@ -1,4 +1,5 @@
-@mixin backImage($image,
+@mixin backImage(
+  $image,
   $height: 100vh,
   $bgPos: center center
   ) {
