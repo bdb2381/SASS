@@ -28,7 +28,7 @@
 .jumbotron {
 	@include backImage(
 		'../images/water.jpg',
-		600px);
+		600px, top center);
 	margin-top: 0;
 }
 
