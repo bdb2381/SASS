@@ -3,7 +3,7 @@ $color-btn-default: $color-main;
 $color-btn-hot: $red;
 $color-btn-cool: $blue;
 
-.btn{
+%btn{  //% makes an invisible class other classes build off of
 	display: inline-block;
 	padding: 6px 12px;
 	text-align: center;
@@ -18,11 +18,14 @@ $color-btn-cool: $blue;
 }
 
 .btn-default{
+	@extend %btn; //takes on props of the btn so don't need to write .btn in class decleration in html
 	background: $color-btn-default;
 }
 .btn-hot{
+	@extend %btn;
 	background: $color-btn-hot;
 }
 .btn-cool{
+	@extend %btn;
 	background: $color-btn-cool;
 }

@@ -376,7 +376,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Helvetica;
   color: red; }
 
-.btn {
+.btn-default, .btn-hot, .btn-cool {
   display: inline-block;
   padding: 6px 12px;
   text-align: center;
@@ -438,9 +438,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   list-style: none; }
   .media .item {
-    margin-bottom: 20px;
-    border-top: 1px dotted red;
-    padding-top: 20px; }
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+    border-top: 1px dotted red; }
+    .media .item:hover {
+      background: #FFBA00; }
+    .media .item:last-of-type {
+      border-bottom: 1px dotted red; }
   .media .head {
     margin: 0;
     padding: 0;
