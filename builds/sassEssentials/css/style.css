@@ -446,11 +446,18 @@ h1, h2, h3, h4, h5, h6 {
       background: #FFBA00; }
     .media .item:last-of-type {
       border-bottom: 1px dotted red; }
+    .media .item:before, .media .item:after {
+      content: "";
+      display: table; }
+    .media .item:after {
+      clear: both; }
   .media .head {
     margin: 0;
     padding: 0;
     color: #0076A3;
     font-size: 2rem; }
+    #typography .media .head {
+      color: red; }
   .media p {
     margin: 0;
     font-size: 1.5rem; }

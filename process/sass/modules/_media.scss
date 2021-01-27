@@ -17,6 +17,7 @@ $color-media-head: $blue;
     &:last-of-type{
       border-bottom: 1px dotted $color-item-border;
     }
+    @include clearfix;
   }
 
   .head {
@@ -24,6 +25,9 @@ $color-media-head: $blue;
     padding: 0;
     color: $color-media-head;
     font-size: 2rem;
+    #typography & {
+      color: $red;
+    }
   }
 
   p {
