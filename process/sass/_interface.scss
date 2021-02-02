@@ -32,9 +32,9 @@ $color-btn-cool: $blue;
 
 .grid {
 	@include clearfix;
-	.item{
+	.item {
 		float: left;
-		@include imageGrid(3, 2%) // imageGrid($quantity, $margin){
+		@include imageGrid(5, 1%) // imageGrid($quantity, $margin){
 	}
 	img {
 		display: block;

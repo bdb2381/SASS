@@ -29,7 +29,7 @@
 
 @mixin imageGrid($quantity, $margin){
 width:(
-  (100% - (($quantity - 1) * $margin )) / $quantity);
+  (100% - (($quantity - 1 ) * $margin )) / $quantity);
   &:nth-child(n){  // all elements except last
     margin-bottom: $margin;
     margin-right: $margin;
