@@ -1,8 +1,9 @@
 $color-even-cells: transparentize($yellow, .8);
+$color-odd-cells: transparentize($orange, .8);
 
 .table {
   font-size: 1.5rem;
-  text-align: left;
+  text-align: center;
   width: 100%;
 
   caption {
@@ -11,14 +12,41 @@ $color-even-cells: transparentize($yellow, .8);
     padding-bottom: 5px;
   }
 
-  > thead,
+  > thead,   // `>` is a child combinator..select onlychildlrend of the item above
   > tbody,
   > tfoot {
     > tr {
+      &:nth-child(odd){
+      background-color:$color-odd-cells;
+        &:hover {
+        background-color: opacify($color-odd-cells, .5)
+        }
+      }
+      &:nth-child(even){
+        background-color: $color-even-cells;
+        &:hover {
+          background-color: opacify($color-even-cells, .5);
+          }
+      }
       > th,
       > td {
         padding: 10px;
+        border-bottom: 2px dotted $orange;
       }
     }
   }
+
+  >thead >tr {
+    &:nth-child(1){
+        background-color: $purple;
+        color: $color-backgrounds;
+        &:hover {
+          background-color: complement($purple)
+        }
+        >th {
+          border-bottom: 0;
+        }
+    }
+  }
+
 }

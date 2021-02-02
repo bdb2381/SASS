@@ -493,16 +493,40 @@ h1, h2, h3, h4, h5, h6 {
 
 .table {
   font-size: 1.5rem;
-  text-align: left;
+  text-align: center;
   width: 100%; }
   .table caption {
     font-size: 2.5rem;
     text-align: left;
     padding-bottom: 5px; }
+  .table > thead > tr:nth-child(odd),
+  .table > tbody > tr:nth-child(odd),
+  .table > tfoot > tr:nth-child(odd) {
+    background-color: rgba(243, 152, 86, 0.2); }
+    .table > thead > tr:nth-child(odd):hover,
+    .table > tbody > tr:nth-child(odd):hover,
+    .table > tfoot > tr:nth-child(odd):hover {
+      background-color: rgba(243, 152, 86, 0.7); }
+  .table > thead > tr:nth-child(even),
+  .table > tbody > tr:nth-child(even),
+  .table > tfoot > tr:nth-child(even) {
+    background-color: rgba(255, 186, 0, 0.2); }
+    .table > thead > tr:nth-child(even):hover,
+    .table > tbody > tr:nth-child(even):hover,
+    .table > tfoot > tr:nth-child(even):hover {
+      background-color: rgba(255, 186, 0, 0.7); }
   .table > thead > tr > th,
   .table > thead > tr > td,
   .table > tbody > tr > th,
   .table > tbody > tr > td,
   .table > tfoot > tr > th,
   .table > tfoot > tr > td {
-    padding: 10px; }
+    padding: 10px;
+    border-bottom: 2px dotted #F39856; }
+  .table > thead > tr:nth-child(1) {
+    background-color: #6D73C2;
+    color: white; }
+    .table > thead > tr:nth-child(1):hover {
+      background-color: #c2bc6d; }
+    .table > thead > tr:nth-child(1) > th {
+      border-bottom: 0; }
