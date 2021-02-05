@@ -5,10 +5,7 @@ nav {
 
 	.branding {
 		float: left;
-		display: none;
-		@include break(1000px) {
-			display: block;
-		}
+
 	}
 
 	.branding h1 {
@@ -26,9 +23,6 @@ nav {
 	}
 
 	ul li {
-		@include break(760px) {
-			float: right;
-		}
 		padding: 10px 5px;
 	}
 
@@ -37,7 +31,7 @@ nav {
 		padding: 10px 5px;
 		color: $color-backgrounds;
 
-		&:hover {			
+		&:hover {
 			color: $yellow;
 		}
 
@@ -49,13 +43,12 @@ nav {
 			color: white;
 		}
 	}
+
 	footer & {
 		margin-top:20px;
 		min-height: 200px;
 		background-color: darken($blue, 15%);
 
-		@include break(0, 500px) {
-			display: none;
-		}
+
 	}
 }
