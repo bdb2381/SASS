@@ -5,6 +5,10 @@ nav {
 
 	.branding {
 		float: left;
+		display: none; // do not display at all until breakpoint
+		@include break(1000px){
+			display: block;
+		}
 
 	}
 
@@ -24,6 +28,9 @@ nav {
 
 	ul li {
 		padding: 10px 5px;
+		@include break(760px){
+			float: right;
+		}
 	}
 
 	ul li a {

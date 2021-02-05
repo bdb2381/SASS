@@ -39,3 +39,10 @@ width:(
     margin-bottom: 0;
   }
 }
+
+
+@mixin break($length){
+  @media(min-width: $length){
+    @content; //allows content to be passed via the function body
+  }
+}
